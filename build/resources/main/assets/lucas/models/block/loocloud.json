@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lucas:block/looclou",
+    "up": "lucas:block/looclou",
+    "north": "lucas:block/looclou",
+    "east": "lucas:block/looclou",
+    "south": "lucas:block/looclou",
+    "west": "lucas:block/looclou",
+    "particle": "lucas:block/looclou"
+  },
+  "render_type": "translucent"
+}

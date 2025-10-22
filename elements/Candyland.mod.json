@@ -1,0 +1,125 @@
+{
+  "_fv": 79,
+  "_type": "biome",
+  "definition": {
+    "name": "Candyland",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.WATER"
+    },
+    "airColor": {
+      "value": -3381505,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -3381505,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -3407770,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -13434625,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -6750055,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -13408513,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "block.amethyst_cluster.place"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 0.19999999999999998,
+    "temperature": 1.0,
+    "spawnBiome": false,
+    "spawnInCaves": true,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.49620000000000003,
+      "max": 2.0
+    },
+    "genHumidity": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genContinentalness": {
+      "min": 0.3,
+      "max": 1.0
+    },
+    "genErosion": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 2.0
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Birch trees",
+    "treeType": 1,
+    "minHeight": 2,
+    "treeStem": {
+      "value": "Blocks.CONCRETE#4"
+    },
+    "treeBranch": {
+      "value": "Blocks.CONCRETE_POWDER#10"
+    },
+    "treeVines": {
+      "value": "Blocks.CONCRETE#6"
+    },
+    "treeFruits": {
+      "value": "Blocks.CONCRETE#14"
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "savanna",
+    "spawnWoodlandMansion": true,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": true,
+    "spawnSwampHut": true,
+    "spawnIgloo": true,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": true,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": true,
+    "spawnNetherFossil": true,
+    "spawnBastionRemnant": true,
+    "spawnEndCity": true,
+    "spawnRuinedPortal": "NETHER",
+    "spawnEntries": []
+  }
+}

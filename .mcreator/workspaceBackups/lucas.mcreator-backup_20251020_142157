@@ -1,0 +1,824 @@
+{
+  "mod_elements": [
+    {
+      "name": "HelloBaby",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello_baby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/block/HelloBabyBlock.java",
+          "src/main/resources/assets/lucas/items/hello_baby.json",
+          "src/main/resources/assets/lucas/models/block/hello_baby.json",
+          "src/main/resources/assets/lucas/models/item/hello_baby.json",
+          "src/main/resources/assets/lucas/blockstates/hello_baby.json"
+        ]
+      }
+    },
+    {
+      "name": "Jumpblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jumpblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/block/JumpblockBlock.java",
+          "src/main/resources/assets/lucas/models/block/jumpblock.json",
+          "src/main/resources/data/lucas/worldgen/placed_feature/jumpblock.json",
+          "src/main/resources/data/lucas/loot_table/blocks/jumpblock.json",
+          "src/main/resources/assets/lucas/blockstates/jumpblock.json",
+          "src/main/resources/assets/lucas/items/jumpblock.json",
+          "src/main/resources/data/lucas/worldgen/configured_feature/jumpblock.json",
+          "src/main/resources/assets/lucas/models/item/jumpblock.json"
+        ]
+      }
+    },
+    {
+      "name": "HelloBabyRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello_baby_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/HelloBabyRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HelloBabyBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello_baby_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/HelloBabyBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HelloBabyOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello_baby_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/HelloBabyOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HelloBabyEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello_baby_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/HelloBabyEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LightningswordRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightningsword_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/LightningswordRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LightningswordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightningsword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/LightningswordLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Lightningsword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/models/item/fireball_sword.json",
+          "src/main/resources/assets/lucas/items/fireball_sword.json",
+          "src/main/java/net/mcreator/lucas/item/LightningswordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LightningswordRightclicked1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightningsword_rightclicked_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/LightningswordRightclicked1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fireblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/blockstates/fireblock.json",
+          "src/main/resources/assets/lucas/models/block/fireblock.json",
+          "src/main/resources/data/lucas/loot_table/blocks/fireblock.json",
+          "src/main/resources/assets/lucas/items/fireblock.json",
+          "src/main/resources/assets/lucas/models/item/fireblock.json",
+          "src/main/java/net/mcreator/lucas/block/FireblockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Bigfire",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bigfire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/blockstates/bigfire.json",
+          "src/main/resources/assets/lucas/models/item/bigfire.json",
+          "src/main/resources/assets/lucas/items/bigfire.json",
+          "src/main/resources/assets/lucas/models/block/bigfire.json",
+          "src/main/resources/data/lucas/loot_table/blocks/bigfire.json",
+          "src/main/java/net/mcreator/lucas/block/BigfireBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LightningswordEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightningsword_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/LightningswordEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Iridiumore",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iridiumore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/block/IridiumoreBlock.java",
+          "src/main/resources/data/lucas/loot_table/blocks/iridiumore.json",
+          "src/main/resources/assets/lucas/items/iridiumore.json",
+          "src/main/resources/assets/lucas/models/block/iridiumore.json",
+          "src/main/resources/assets/lucas/models/item/iridiumore.json",
+          "src/main/resources/assets/lucas/blockstates/iridiumore.json",
+          "src/main/resources/data/lucas/worldgen/configured_feature/iridiumore.json",
+          "src/main/resources/data/lucas/worldgen/placed_feature/iridiumore.json"
+        ]
+      }
+    },
+    {
+      "name": "Ir",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ir",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/models/item/ir.json",
+          "src/main/java/net/mcreator/lucas/item/IrItem.java",
+          "src/main/resources/assets/lucas/items/ir.json"
+        ]
+      }
+    },
+    {
+      "name": "Iridiumswordrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iridiumswordrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lucas/recipe/iridiumswordrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "IridiumoreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iridiumore_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/IridiumoreBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IridiumoreRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iridiumore_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/IridiumoreRedstoneOnProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SheepMob1",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep_mob_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/items/sheep_mob_1_spawn_egg.json",
+          "src/main/java/net/mcreator/lucas/entity/SheepMob1Entity.java",
+          "src/main/resources/assets/lucas/models/item/sheep_mob_1_spawn_egg.json",
+          "src/main/java/net/mcreator/lucas/client/renderer/SheepMob1Renderer.java"
+        ]
+      }
+    },
+    {
+      "name": "SheepMob1EntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep_mob_1_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/SheepMob1EntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuperSheep",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_sheep",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/items/super_sheep_spawn_egg.json",
+          "src/main/java/net/mcreator/lucas/client/renderer/SuperSheepRenderer.java",
+          "src/main/java/net/mcreator/lucas/entity/SuperSheepEntity.java",
+          "src/main/resources/assets/lucas/models/item/super_sheep_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "SuperSheepEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_sheep_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/SuperSheepEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Candyland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "candyland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/lucas/worldgen/placed_feature/candyland_tree.json",
+          "src/main/java/net/mcreator/lucas/world/features/treedecorators/CandylandTrunkDecorator.java",
+          "src/main/resources/data/lucas/worldgen/configured_feature/candyland_tree.json",
+          "src/main/java/net/mcreator/lucas/world/features/treedecorators/CandylandFruitDecorator.java",
+          "src/main/java/net/mcreator/lucas/world/features/treedecorators/CandylandLeaveDecorator.java",
+          "src/main/resources/data/lucas/worldgen/biome/candyland.json"
+        ]
+      }
+    },
+    {
+      "name": "Loo",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/particles/loo.json",
+          "src/main/java/net/mcreator/lucas/client/particle/LooParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "LoocloudClientDisplayRandomTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loocloud_client_display_random_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/LoocloudClientDisplayRandomTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LoocloudBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loocloud_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/LoocloudBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Loocloud",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loocloud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/models/block/loocloud.json",
+          "src/main/resources/assets/lucas/models/item/loocloud.json",
+          "src/main/java/net/mcreator/lucas/block/LoocloudBlock.java",
+          "src/main/resources/assets/lucas/items/loocloud.json",
+          "src/main/resources/data/lucas/loot_table/blocks/loocloud.json",
+          "src/main/resources/assets/lucas/blockstates/loocloud.json"
+        ]
+      }
+    },
+    {
+      "name": "DumbButtLooPlant",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dumb_butt_loo_plant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/models/item/dumb_butt_loo_plant.json",
+          "src/main/resources/data/lucas/worldgen/placed_feature/dumb_butt_loo_plant.json",
+          "src/main/resources/assets/lucas/models/block/dumb_butt_loo_plant.json",
+          "src/main/java/net/mcreator/lucas/block/DumbButtLooPlantBlock.java",
+          "src/main/resources/data/lucas/worldgen/configured_feature/dumb_butt_loo_plant.json",
+          "src/main/resources/data/lucas/loot_table/blocks/dumb_butt_loo_plant.json",
+          "src/main/resources/assets/lucas/items/dumb_butt_loo_plant.json",
+          "src/main/resources/assets/lucas/blockstates/dumb_butt_loo_plant.json"
+        ]
+      }
+    },
+    {
+      "name": "DumbButtLooPlantPlantDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dumb_butt_loo_plant_plant_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/procedures/DumbButtLooPlantPlantDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dumbcar",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dumbcar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/lucas/items/dumbcar_spawn_egg.json",
+          "src/main/java/net/mcreator/lucas/client/renderer/DumbcarRenderer.java",
+          "src/main/resources/assets/lucas/models/item/dumbcar_spawn_egg.json",
+          "src/main/java/net/mcreator/lucas/entity/DumbcarEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Hello",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/lucas/client/gui/HelloScreen.java",
+          "src/main/java/net/mcreator/lucas/network/HelloButtonMessage.java",
+          "src/main/java/net/mcreator/lucas/world/inventory/HelloMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "NekMod",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nek_mod",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "dumbuttlooplantvariable",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_monument": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fortress": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/jungle_temple": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/igloo": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_nether": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/woodland_mansion": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/end_city": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Candyland"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Iridiumore",
+      "~CUSTOM:HelloBaby"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/bastion_remnant": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/village_savanna": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:Candyland"
+    ],
+    "BIOMES:minecraft:has_structure/swamp_hut": [
+      "~CUSTOM:Candyland"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Lightningsword"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:Iridiumore"
+    ],
+    "ENTITIES:minecraft:arthropod": [
+      "~CUSTOM:SheepMob1"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.lucas.dumb_butt_loo_plant": "Dumb Butt Loo Plant",
+      "entity.lucas.sheep_mob_1": "supersheep that does not work",
+      "block.lucas.loocloud": "Loocloud",
+      "block.lucas.bigfire": "Bigfire",
+      "item.lucas.sheep_mob_1_spawn_egg": "supersheep that does not work Spawn Egg",
+      "entity.lucas.dumbcar": "Dumbcar",
+      "block.lucas.jumpblock": "Jumpblock",
+      "block.lucas.iridiumore": "Iridiumore",
+      "biome.lucas.candyland": "Candyland",
+      "item.lucas.super_sheep_spawn_egg": "Super Sheep Spawn Egg",
+      "block.lucas.hello_baby": "Hello Lava",
+      "block.lucas.fireblock": "Fireblock",
+      "item.lucas.fireball_sword": "Lightningsword",
+      "entity.lucas.super_sheep": "Super Sheep",
+      "item.lucas.dumbcar_spawn_egg": "Dumbcar Spawn Egg",
+      "item.lucas.ir": "Iridium  ingot",
+      "gui.lucas.hello.button_hello": "hello",
+      "item_group.lucas.nek_mod": "Nek\u0027s Mod",
+      "item.lucas.hello_baby": "Hello Lava",
+      "item.lucas.jumpblock": "Jumpblock",
+      "item.lucas.fireblock": "Fireblock",
+      "item.lucas.bigfire": "Bigfire",
+      "item.lucas.iridiumore": "Iridiumore",
+      "item.lucas.loocloud": "Loocloud",
+      "item.lucas.dumb_butt_loo_plant": "Dumb Butt Loo Plant"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/lucas/mixin/BlockItemMixin.java",
+      "src/main/java/net/mcreator/lucas/event/LivingEntityEvents.java",
+      "src/main/java/net/mcreator/lucas/mixin/LivingEntityMixin.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/lucas/init/LucasModModels.java",
+      "src/main/java/net/mcreator/lucas/event/MiscEvents.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModTabs.java",
+      "src/main/java/net/mcreator/lucas/event/BlockEvents.java",
+      "src/main/resources/fabric.mod.json",
+      "src/main/java/net/mcreator/lucas/LucasMod.java",
+      "src/main/java/net/mcreator/lucas/network/LucasModVariables.java",
+      "src/main/java/net/mcreator/lucas/event/PlayerEvents.java",
+      "src/main/java/net/mcreator/lucas/event/ItemEvents.java",
+      "src/main/java/net/mcreator/lucas/mixin/ItemStackMixin.java",
+      "src/main/java/net/mcreator/lucas/mixin/CommandsMixin.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModFeatures.java",
+      "src/main/java/net/mcreator/lucas/mixin/ExperienceOrbMixin.java",
+      "src/main/resources/lucas.mixins.json",
+      "src/main/java/net/mcreator/lucas/mixin/PlayerMixin.java",
+      "src/main/resources/META-INF/lucas.accesswidener",
+      "src/main/java/net/mcreator/lucas/mixin/BoneMealItemMixin.java",
+      "src/main/java/net/mcreator/lucas/LucasModClient.java",
+      "src/main/java/net/mcreator/lucas/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModBiomes.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModMenus.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModScreens.java",
+      "src/main/java/net/mcreator/lucas/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModParticles.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModParticleTypes.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModProcedures.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModBlocksRenderers.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModBlocks.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModItems.java",
+      "src/main/java/net/mcreator/lucas/mixin/RepairItemRecipeMixin.java",
+      "src/main/java/net/mcreator/lucas/mixin/ServerPlayerMixin.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModEntityRenderers.java",
+      "src/main/java/net/mcreator/lucas/init/LucasModEntities.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "lucas",
+    "modName": "lucas",
+    "version": "1.0.0",
+    "author": "lucas, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.21.8",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.lucas"
+  },
+  "mcreatorVersion": 202500342611
+}

@@ -1,0 +1,165 @@
+---- Minecraft Crash Report ----
+// Oh - I know what I did wrong!
+
+Time: 2024-01-05 19:47:46
+Description: Ticking entity
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3481) ~[?:?] {}
+	at java.util.ArrayList.grow(ArrayList.java:237) ~[?:?] {re:computing_frames}
+	at java.util.ArrayList.grow(ArrayList.java:244) ~[?:?] {re:computing_frames}
+	at java.util.ArrayList.add(ArrayList.java:454) ~[?:?] {re:computing_frames}
+	at java.util.ArrayList.add(ArrayList.java:467) ~[?:?] {re:computing_frames}
+	at net.minecraft.world.level.Level.lambda$getEntities$1(Level.java:643) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level$$Lambda$8641/0x00007fb0c90aa1b8.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.AbortableIterationConsumer.lambda$forConsumer$0(AbortableIterationConsumer.java:11) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.util.AbortableIterationConsumer$$Lambda$8642/0x00007fb0c90aa838.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.entity.EntitySection.getEntities(EntitySection.java:32) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.EntitySectionStorage.lambda$getEntities$1(EntitySectionStorage.java:116) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.EntitySectionStorage$$Lambda$8643/0x00007fb0c90aaa60.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.entity.EntitySectionStorage.forEachAccessibleNonEmptySection(EntitySectionStorage.java:55) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.EntitySectionStorage.getEntities(EntitySectionStorage.java:115) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.LevelEntityGetterAdapter.get(LevelEntityGetterAdapter.java:37) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.getEntities(Level.java:641) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LightningBolt.tick(LightningBolt.java:130) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:693) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel$$Lambda$8623/0x00007fb0c909abb0.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:479) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$6(ServerLevel.java:343) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel$$Lambda$8607/0x00007fb0c909c480.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:323) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:893) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:814) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:89) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:661) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer$$Lambda$8093/0x00007fb0c8fca110.run(Unknown Source) ~[?:?] {}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.Arrays.copyOf(Arrays.java:3481) ~[?:?] {}
+	at java.util.ArrayList.grow(ArrayList.java:237) ~[?:?] {re:computing_frames}
+	at java.util.ArrayList.grow(ArrayList.java:244) ~[?:?] {re:computing_frames}
+	at java.util.ArrayList.add(ArrayList.java:454) ~[?:?] {re:computing_frames}
+	at java.util.ArrayList.add(ArrayList.java:467) ~[?:?] {re:computing_frames}
+	at net.minecraft.world.level.Level.lambda$getEntities$1(Level.java:643) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level$$Lambda$8641/0x00007fb0c90aa1b8.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.AbortableIterationConsumer.lambda$forConsumer$0(AbortableIterationConsumer.java:11) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.util.AbortableIterationConsumer$$Lambda$8642/0x00007fb0c90aa838.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.entity.EntitySection.getEntities(EntitySection.java:32) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.EntitySectionStorage.lambda$getEntities$1(EntitySectionStorage.java:116) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.EntitySectionStorage$$Lambda$8643/0x00007fb0c90aaa60.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.entity.EntitySectionStorage.forEachAccessibleNonEmptySection(EntitySectionStorage.java:55) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.EntitySectionStorage.getEntities(EntitySectionStorage.java:115) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.LevelEntityGetterAdapter.get(LevelEntityGetterAdapter.java:37) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.getEntities(Level.java:641) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LightningBolt.tick(LightningBolt.java:130) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:693) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel$$Lambda$8623/0x00007fb0c909abb0.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:479) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$6(ServerLevel.java:343) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:lightning_bolt (net.minecraft.world.entity.LightningBolt)
+	Entity ID: 31578
+	Entity Name: Lightning Bolt
+	Entity's Exact location: 48.50, 64.00, -22.50
+	Entity's Block location: World: (48,64,-23), Section: (at 0,0,9 in 3,4,-2; chunk contains blocks 48,-64,-32 to 63,319,-17), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,-64,-512 to 511,319,-1)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:482) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.lambda$tick$6(ServerLevel.java:343) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:323) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:893) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:814) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:89) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:661) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23181!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Dev'/656, l='ServerLevel[hello baby]', x=48.21, y=64.69, z=-22.21]]
+	Chunk stats: 2248
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-32,64,-80), Section: (at 0,0,0 in -2,4,-5; chunk contains blocks -32,-64,-80 to -17,319,-65), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+	Level time: 47647 game time, 47647 day time
+	Level name: hello baby
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 76799 (now: false), thunder time: 34609 (now: false)
+	Known server brands: forge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (amd64) version 5.19.0-46-generic
+	Java Version: 17.0.9, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 23982224 bytes (22 MiB) / 8392802304 bytes (8004 MiB) up to 8392802304 bytes (8004 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+	Identifier: Intel64 Family 6 Model 94 Stepping 3
+	Microarchitecture: Skylake (Client)
+	Frequency (GHz): 4.00
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: TU102 [TITAN RTX]
+	Graphics card #0 vendor: NVIDIA Corporation (0x10de)
+	Graphics card #0 VRAM (MB): 288.00
+	Graphics card #0 deviceId: 0x1e02
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 19909.53
+	Virtual memory used (MB): 15488.44
+	Swap memory total (MB): 3903.50
+	Swap memory used (MB): 0.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/656, l='ServerLevel[hello baby]', x=48.21, y=64.69, z=-22.21]]
+	Data Packs: vanilla, mod:lucas, mod:forge, bundle
+	Enabled Feature Flags: minecraft:bundle, minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.|Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |lucas                         |lucas                         |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |47.2.0              |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 9c5afb1f-dbde-4955-a331-434593323d6d
+	FML: 47.2
+	Forge: net.minecraftforge:47.2.0

@@ -1,0 +1,48 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "screenshot_2025-07-01_174955.png",
+          "use1Xscale": true,
+          "x": -8,
+          "y": -54,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_hello",
+          "text": "hello",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "HelloBabyOnBlockRightClicked"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 56,
+          "y": 42,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

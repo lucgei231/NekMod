@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lucas:block/bussesarneat12",
+    "up": "lucas:block/bussesarneat12",
+    "north": "lucas:block/bussesarneat12",
+    "east": "lucas:block/bussesarneat12",
+    "south": "lucas:block/bussesarneat12",
+    "west": "lucas:block/bussesarneat12",
+    "particle": "lucas:block/bussesarneat12"
+  },
+  "render_type": "solid"
+}

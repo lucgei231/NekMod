@@ -1,0 +1,61 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="lucas"
+version="1.0.0"
+displayName="lucas"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="lucas, MCreator"
+
+[[mixins]]
+config="mixins.lucas.json"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.lucas]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.190,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.lucas]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.lucas]]
+modId="mcreator_link"
+type="required"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
+
+
+
+# Start of user code block dependencies configuration
+[[dependencies.memory_of_the_past]]
+modId="jauml"
+type="required"
+versionRange="[1.0.3,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.memory_of_the_past]]
+modId="jauml"
+type="required"
+versionRange="[1.0.3,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.memory_of_the_past]]
+modId="jauml"
+type="required"
+versionRange="[1.0.3,)"
+ordering="NONE"
+side="BOTH"
+# End of user code block dependencies configuration

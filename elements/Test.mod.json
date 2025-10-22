@@ -1,0 +1,15 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "G",
+    "keyBindingName": "fire",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "GKeyTrue"
+    },
+    "onKeyReleased": {
+      "name": "GKeyFalse"
+    }
+  }
+}

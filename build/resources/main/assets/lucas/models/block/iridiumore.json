@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lucas:block/iridium_ore",
+    "up": "lucas:block/iridium_ore",
+    "north": "lucas:block/iridium_ore",
+    "east": "lucas:block/iridium_ore",
+    "south": "lucas:block/iridium_ore",
+    "west": "lucas:block/iridium_ore",
+    "particle": "lucas:block/iridium_ore"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "lucas:custom/loo_plant",
+  "textures": {
+    "all": "lucas:block/texture",
+    "particle": "lucas:block/texture",
+    "0": "lucas:block/texture",
+    "missing": "lucas:block/"
+  },
+  "render_type": "cutout"
+}

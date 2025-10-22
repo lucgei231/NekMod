@@ -1,0 +1,14 @@
+/summon lucas:super_sheep
+/summon lucas:sheep_mob_1
+/kill @e
+/summon lucas:dumbcar
+/tp ~ 100 ~
+/tp ~ 0 ~
+/tp ~ 0 ~t
+/kill @e
+/o
+/gamemode
+/gamemode creative
+/help
+/version
+/fabric-command-api-v2:client
