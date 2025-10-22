@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "lucas:candyland",
+  "features": "lucas:dumb_butt_loo_plant",
+  "step": "vegetal_decoration"
+}

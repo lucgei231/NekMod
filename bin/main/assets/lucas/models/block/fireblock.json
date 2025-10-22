@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lucas:block/fire_block",
+    "up": "lucas:block/fire_block",
+    "north": "lucas:block/fire_block",
+    "east": "lucas:block/fire_block",
+    "south": "lucas:block/fire_block",
+    "west": "lucas:block/fire_block",
+    "particle": "lucas:block/fire_block"
+  },
+  "render_type": "cutout"
+}
