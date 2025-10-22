@@ -1,5 +1,5 @@
 .gradle/9.1.0/checksums/checksums.lock
-*.lock
+*/*.lock
 *.launch
 .gradle/9.1.0/fileHashes/fileHashes.lock
 .gradle
